@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Todo app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="heads">
+    <div class="imageprofile">
+      
+        <img src="./images/bg-desktop-dark.jpg" alt="" id="darkscreen">
+        <img src="./images/bg-desktop-light.jpg" alt="" id="lightscreen">
+      <div class="uppersection">
+        <h1>Todo</h1>
+      <div class="changetheme">
+        <button class="darktheme" id="darktheme">
+          <img src="./images/icon-moon.svg" alt="">
+        </button>
+        <button class="lighttheme" id="lighttheme">
+          <img src="./images/icon-sun.svg" alt="">
+        </button>
+      </div>
+      </div>
+      
+    </div>
+
+    <div class="searchentry">
+      <div class="addsection">
+        <input type="text" placeholder="Create a new todo" id="typechange">
+        <button class="listadd">Add</button>
+      </div>
+    </div>
+    <div class="container" id="container">
+      
+     <div class="todo-list">
+        <ul>
+            <li>
+                <input type="checkbox" id="underlinecheckbox" class="item-checkbox">
+                <label id="targetelement">Complete online JavaScript course</label>
+            </li>
+            <li>
+                <input type="checkbox" class="item-checkbox">
+                <label>Jog around the park 3x</label>
+            </li>
+            <li>
+                <input type="checkbox" class="item-checkbox">
+                <label>10 minutes meditation</label>
+            </li>
+            <li>
+                <input type="checkbox" class="item-checkbox">
+                <label>Read for 1 hour</label>
+            </li>
+            <li>
+                <input type="checkbox" class="item-checkbox">
+                <label>Pick up groceries</label>
+            </li>
+            <li>
+                <input type="checkbox" class="item-checkbox">
+                <label>Complete Todo App on Frontend Mentor</label>
+            </li>
+        </ul>
+  </div>
+
+
+  <div class="lowersection">
+    <div class="listitems">
+      <h2 id="remaining-items"> 6 items left</h2>
+    </div>
+     <div>
+      <ul class="statusitem">
+        <li id="btnactive">All</li>
+        <li>Active</li>
+        <li>Completed</li>
+        <li>Clear Completed</li>
+      </ul>
+     </div>
+     </div>
+ 
+  
+  </div>
+ <p class="lowest">Drag and drop to reorder list</p>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Victor</a>.
+  </div>      
+    </div>
+
+  </header>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>

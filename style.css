@@ -1,0 +1,140 @@
+
+header{
+    background-color:hsl(233, 14%, 35%);
+    border: 2px solid green;
+    margin-bottom: 1000px;
+    height: 120vh;
+
+}
+.container{
+    background-color: hsl(192, 100%, 67%);
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    width: 40%;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+    
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+.imageprofile{
+    position: relative;
+    width: 100%;
+}
+.uppersection{
+    position: absolute;
+    top: 15%; 
+    left: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 400px;
+}
+.searchentry{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+}
+.addsection input{
+    width: 480px;
+    padding: 15px;
+    border-radius: 5px 0 0 5px;
+}
+.listadd{
+    padding: 15px;
+    border-radius: 0px 5px 5px 0;
+    display: none;
+}
+h1{
+    color: white;
+    font-size: 40px;
+}
+.lighttheme,
+.darktheme{
+    text-decoration: none;
+    background-color: transparent;
+    border: 0px;
+}
+#lightscreen{
+    display: none;
+}
+
+.lighttheme:hover,
+.darktheme:hover{
+    color: hsl(228, 45%, 44%);
+}
+.darktheme{
+    display: none;
+}
+.lowersection{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.statusitem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.statusitem li:hover{
+    color: white 
+}
+#btnactive{
+    color: blue;
+    
+}
+.lowest{
+    text-align: center;
+    color: whitesmoke;
+}
+
+.todo-list{
+    margin-bottom: 20px;
+}
+.todo-list ul {
+    list-style: none;
+    
+}
+
+.todo-list li {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #444;
+}
+
+.todo-list li input[type="checkbox"] {
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.todo-list li input[type="checkbox"]:hover{
+    list-style: circle;
+}
+.todo-list li input[type="checkbox"]::after{
+    list-style: circle ;
+}
+
+.todo-list li label {
+    flex: 1; 
+}
+
+.todo-list li button {
+    background: none;
+    border: none;
+    color: white;
+    margin-left: 1rem;
+    font-size: 1rem;
+} 
