@@ -62,8 +62,8 @@ function updateRemainingItems() {
 
 let typechange =document.getElementById('typechange');
 
-typechange.addEventListener('click', () => {
-    document.getElementById('typechange').style.display = 'none';
-    document.getElementById('typechange2').style.display = 'block';
+typechange.addEventListener('change', () => {
+    if(input.click)
+    typechange.value = 'Currently typing...';
 });
 });

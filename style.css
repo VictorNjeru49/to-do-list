@@ -1,18 +1,17 @@
 
 header{
     background-color:hsl(233, 14%, 35%);
-    border: 2px solid green;
     margin-bottom: 1000px;
     height: 120vh;
 
 }
 .container{
-    background-color: hsl(192, 100%, 67%);
     position: absolute;
     top: 50%;
     left: 25%;
     width: 40%;
     margin: 0 auto;
+    background-color: darkgray;
     border: 2px solid black;
 }
 .attribution { 
@@ -138,3 +137,8 @@ h1{
     margin-left: 1rem;
     font-size: 1rem;
 } 
+.footer{
+    display: none ;
+
+
+}
