@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", ()=> {
 let lighttheme= document.getElementById('lighttheme');
 let darktheme= document.getElementById('darktheme');
 
+
+//change background color
 lighttheme.addEventListener('click', changetheme=() => {
     // document.body.classList.remove('dark');
     // document.body.classList.add('light');
@@ -26,6 +28,8 @@ darktheme.addEventListener('click', changetheme=() => {
 });
 
 
+
+//strikethrough the to do list elements
 const checkbox = document.getElementById('underlinecheckbox');
 const targetElement = document.getElementById('targetelement');
 
@@ -41,8 +45,37 @@ checkbox.addEventListener('change', () => {
 
 
 
+//strikethrough the to do list elements  
+const checkboxing = document.getElementById('clearauto');
+const targetElementing = document.getElementById('checkDelete');
+
+checkboxing.addEventListener('change', () => {
+  if (checkbox.checked) {
+    targetElementing.style.textDecoration = 'line-through';
+    targetElementing.style.color = 'dimgray';
+  } else {
+    targetElementing.style.textDecoration = 'none';
+    targetElementing.style.color = 'black';
+  }
+});
+
+//strikethrough the to do list elements
+const checkbx = document.getElementById('underline');
+const targetElements = document.getElementById('target');
+
+checkbx.addEventListener('change', () => {
+  if (checkbox.checked) {
+    targetElements.style.textDecoration = 'line-through';
+    targetElements.style.color = 'dimgray';
+  } else {
+    targetElements.style.textDecoration = 'none';
+    targetElements.style.color = 'black';
+  }
+});
 
 
+
+//count a list of elements left 
 const itemCheckboxes = document.querySelectorAll('.item-checkbox');
 const remainingItemsContainer = document.getElementById('remaining-items');
 
@@ -60,10 +93,101 @@ function updateRemainingItems() {
 
 
 
+//change the typing state
 let typechange =document.getElementById('typechange');
 
 typechange.addEventListener('change', () => {
     if(input.click)
     typechange.value = 'Currently typing...';
 });
+
+
+
+//delete from the  one dropdown list
+const list=document.getElementById('resetbtn');
+
+list.addEventListener("click", (e) => {
+  console.log('list clicked');
+  if (e.target.className == "") {
+      const li = e.target.parentElement;
+      li.parentNode.removeChild(li);
+  }
+});
+
+
+//delete from the  two dropdown list
+const lists=document.getElementById('resetbtns');
+
+lists.addEventListener("click", (e) => {
+  console.log('list clicked');
+  if (e.target.className == "") {
+      const li = e.target.parentElement;
+      li.parentNode.removeChild(li);
+  }
+});
+
+
+
+//delete from the three dropdown list
+const listing=document.getElementById('resetbttn');
+
+listing.addEventListener("click", (e) => {
+  console.log('list clicked');
+  if (e.target.className == "") {
+      const li = e.target.parentElement;
+      li.parentNode.removeChild(li);
+  }
+});
+
+
+
+//delete from the  four dropdown list
+const liststyl=document.getElementById('resetsbtn');
+
+liststyl.addEventListener("click", (e) => {
+  console.log('list clicked');
+  if (e.target.className == "") {
+      const li = e.target.parentElement;
+      li.parentNode.removeChild(li);
+  }
+});
+
+
+//delete from the five dropdown list
+const lisny=document.getElementById('setbtn');
+
+lisny.addEventListener("click", (e) => {
+  console.log('list clicked');
+  if (e.target.className == "") {
+      const li = e.target.parentElement;
+      li.parentNode.removeChild(li);
+  }
+});
+
+
+//delete from the  six dropdown list
+const listys=document.getElementById('rsetbtn');
+
+listys.addEventListener("click", (e) => {
+  console.log('list clicked');
+  if (e.target.className == "") {
+      const li = e.target.parentElement;
+      li.parentNode.removeChild(li);
+  }
+});
+
+
+
+//delete from the  six dropdown list
+const checken=document.getElementById('clearlist');
+
+checken.addEventListener("click", (e) => {
+  console.log('list clicked');
+  if (e.target.className == "") {
+      const li = e.target.parentElement;
+      li.parentNode.removeChild(li);
+  }
+});
+
+
 });

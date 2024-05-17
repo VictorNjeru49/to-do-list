@@ -127,7 +127,12 @@ h1{
 }
 
 .todo-list li label {
-    flex: 1; 
+    width: 380px;
+}
+.todo-list li input[type="reset"]{
+    background-color: transparent;
+    border: 0px solid transparent;
+    font-size: 25px;
 }
 
 .todo-list li button {
@@ -137,8 +142,71 @@ h1{
     margin-left: 1rem;
     font-size: 1rem;
 } 
+.resetbtn input[type="reset"]{
+    text-decoration: none;
+    background-color: transparent;
+}
 .footer{
     display: none ;
+}
+@media(max-width:900px){
+    header{
+        width: 100%;
+        background-image: url(./images/bg-mobile-dark.jpg);
+        background-repeat: no-repeat;
+        background-position: cover;
+    }
+    .searchentry{
+        margin: 100px auto;
+    }
+    .imageprofile{
+        position: relative;
+        width: 100%;
+    }
+    .uppersection{
+        position: absolute;
+        left: 0%;
+        display: flex;
+        gap: 250px;
+    }
+    .searchentry{
+        position: absolute;
+        left: 5%;
+        top: 10%;
+    }
+    .addsection input{
+        width: 320px;
+    }
+    .container{
+        position: absolute;
+        top: 30%;
+        width: 93%;
+        left: 3%;
+    }
+    .lowersection{
+        display: flex;
+        flex-direction: row;
+        border: 2px solid black;
+    }
+    .statusitem{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border: 2px solid black;
+    }
+    .listitems{
+        border: 2px solid black;
+    }
+    .todo-list li label {
+        width: 260px;
+    }
+    .todo-list li input[type="reset"]{
 
-
+        font-size: 25px;
+    }
+    .statusitem{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
 }
